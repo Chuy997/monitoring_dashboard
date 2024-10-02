@@ -1,0 +1,116 @@
+/* Estilo del cuerpo de la página */
+body {
+  background-image: url('../nature1.jpg'); /* Ruta de la imagen de fondo */
+  background-size: cover; /* La imagen cubrirá toda la pantalla */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Mantiene la imagen fija cuando se hace scroll */
+  color: #e0e0e0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Asegurar que todos los elementos incluyan padding y border en las dimensiones */
+* {
+  box-sizing: border-box;
+}
+
+/* Contenedor principal */
+.container {
+  padding: 10px;
+  flex: 1;
+}
+
+/* Título */
+h1 {
+  text-align: center;
+  color: #f2f2f2;
+  font-size: 3.0em;
+}
+
+/* Estilo de la sección de valores */
+.values {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.value-box {
+  background-color: rgba(51, 51, 51, 0.0); /* Fondo negro con 80% de opacidad */;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  width: 45%;
+  }
+
+.value-box h2 {
+  margin: 0 0 30px 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.value-box p {
+  text-align: center;
+  font-weight: bold;
+  color: #cccccc;
+  font-size: 1.5em;
+
+}
+
+/* Estilo de los gráficos */
+.charts {
+  display: flex;
+  justify-content: space-around;
+}
+
+.chart-container {
+  position: relative;
+  width: 45%;
+  background-color: rgba(51, 51, 51, 0.95); /* Fondo negro con 80% de opacidad */;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.indicator {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Estilo de la tarjeta animada */
+.card {
+  background: linear-gradient(-45deg, #4444CC, #6666CC, #FF55B8, #CC5555);
+  background-size: 400% 400%;
+  animation: bg 20s infinite;
+}
+
+@keyframes bg {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Estilo del pie de página */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #999;
+  font-size: 1.2em;
+  background-color: rgba(51, 51, 51, 0.0); /* Fondo negro con 80% de opacidad */;
+  margin-top: auto;
+  width: 100%; /* Asegurar que el footer ocupe todo el ancho disponible */
+    bottom: 0; /* Alinear al fondo de la página */
+}
